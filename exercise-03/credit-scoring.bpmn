@@ -47,7 +47,7 @@
     <bpmn:sequenceFlow id="SequenceFlow_182grdy" sourceRef="Task_0g899tp" targetRef="IntermediateThrowEvent_1mq3t9s" />
     <bpmn:serviceTask id="Task_0chi1s9" name="Request credit score">
       <bpmn:extensionElements>
-        <zeebe:taskDefinition type="random-number" />
+        <zeebe:taskDefinition type="credit-score" />
       </bpmn:extensionElements>
       <bpmn:incoming>SequenceFlow_1575e6a</bpmn:incoming>
       <bpmn:incoming>Flow_1amco28</bpmn:incoming>
@@ -55,21 +55,21 @@
     </bpmn:serviceTask>
     <bpmn:serviceTask id="Task_190mrv5" name="Send credit score">
       <bpmn:extensionElements>
-        <zeebe:taskDefinition type="random-number" />
+        <zeebe:taskDefinition type="send-credit-score" />
       </bpmn:extensionElements>
       <bpmn:incoming>SequenceFlow_0ne9h9k</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_0fdxbt6</bpmn:outgoing>
     </bpmn:serviceTask>
     <bpmn:serviceTask id="Task_0g899tp" name="Report delay">
       <bpmn:extensionElements>
-        <zeebe:taskDefinition type="random-number" />
+        <zeebe:taskDefinition type="report-delay" />
       </bpmn:extensionElements>
       <bpmn:incoming>SequenceFlow_0ztrhqz</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_182grdy</bpmn:outgoing>
     </bpmn:serviceTask>
     <bpmn:serviceTask id="Task_0jppkbh" name="Send credit score">
       <bpmn:extensionElements>
-        <zeebe:taskDefinition type="random-number" />
+        <zeebe:taskDefinition type="send-credit-score" />
       </bpmn:extensionElements>
       <bpmn:incoming>SequenceFlow_1t3pqtf</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_1ikwb0p</bpmn:outgoing>
